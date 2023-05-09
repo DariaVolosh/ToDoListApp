@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:contentDescription="@string/semicircles"
         android:id="@+id/imageView"
         android:layout_width="@dimen/_170sdp"
         android:layout_height="@dimen/_145sdp"
@@ -33,14 +34,13 @@
                 android:id="@+id/header"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_above="@id/description"
                 android:layout_marginBottom="15dp"
                 android:alpha="0.75"
                 android:fontFamily="@font/poppins_semibold"
-                android:text="Welcome Onboard!"
+                android:text="@string/sign_up_activity_header"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="18dp"
+                android:textSize="18sp"
                 android:layout_marginTop="30dp"/>
 
             <TextView
@@ -52,73 +52,94 @@
                 android:layout_marginBottom="25dp"
                 android:alpha="0.75"
                 android:fontFamily="@font/poppins_regular"
-                android:text="Let’s help you meet up your tasks"
+                android:text="@string/sign_up_activity_description"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="13dp" />
+                android:textSize="13sp" />
 
             <EditText
+                android:inputType="textPersonName"
+                android:autofillHints="name"
                 android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/edit_text_style"
-                android:hint="Enter your full name"
+                android:hint="@string/sign_up_activity_name_hint"
                 android:fontFamily="@font/poppins_regular"
-                android:textSize="13dp"
-                android:paddingStart="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginLeft="30dp"/>
-
-            <EditText android:id="@+id/email"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:background="@drawable/edit_text_style"
-            android:hint="Enter your email"
-            android:fontFamily="@font/poppins_regular"
-            android:textSize="13dp"
-            android:paddingStart="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="20dp"/>
-
-            <EditText
-                android:id="@+id/password"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:background="@drawable/edit_text_style"
-                android:hint="Enter password"
-                android:fontFamily="@font/poppins_regular"
-                android:textSize="13dp"
+                android:textSize="13sp"
                 android:paddingStart="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="20dp"/>
+                android:paddingEnd="30dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"/>
 
             <EditText
-                android:id="@+id/repeat_password"
+                android:autofillHints="emailAddress"
+                android:id="@+id/email_sign_up"
+                android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text_style"
+            android:hint="@string/email_hint"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="13sp"
+            android:paddingStart="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:paddingEnd="30dp"
+                android:textColorHint="@color/black"/>
+
+            <EditText
+                android:autofillHints="password"
+                android:id="@+id/password_sign_up"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:background="@drawable/edit_text_style"
-                android:hint="Confirm password"
+                android:hint="@string/password_hint"
                 android:fontFamily="@font/poppins_regular"
-                android:textSize="13dp"
+                android:textSize="13sp"
                 android:paddingStart="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="50dp"/>
+                android:inputType="textPassword"
+                android:paddingEnd="30dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"/>
+
+            <EditText
+                android:autofillHints="password"
+                android:id="@+id/repeat_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edit_text_style"
+                android:hint="@string/repeat_password"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="13sp"
+                android:paddingStart="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:inputType="textPassword"
+                android:paddingEnd="30dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"/>
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/getStartedSignUpBtn"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp"
                 android:backgroundTint="@color/azure"
-                android:text="Get Started"
+                android:text="@string/get_started_button_text"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="13dp" />
+                android:textSize="13sp" />
 
             <LinearLayout android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -130,18 +151,20 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Already have an account ?"
+                    android:text="@string/sign_up_activity_account_exists"
                     android:fontFamily="@font/poppins_regular"
                     android:textColor="@color/black"
-                    android:textSize="14dp"/>
+                    android:textSize="14sp"/>
                 <TextView
+                    android:id="@+id/sign_in_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Sign in"
+                    android:text="@string/sign_up_activity_sign_in_button"
                     android:fontFamily="@font/poppins_semibold"
                     android:textColor="@color/azure"
                     android:paddingStart="5dp"
-                    android:textSize="14dp"/>
+                    android:paddingEnd="5dp"
+                    android:textSize="14sp"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

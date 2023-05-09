@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/overall_options">
+        <item
+            android:id="@+id/change_photo"
+            android:title="@string/change_photo_menu_item"
+            android:icon="@drawable/change_photo"/>
+        <item
+            android:id="@+id/change_name"
+            android:title="@string/change_name_menu_item"
+            android:icon="@drawable/change_name"/>
+        <item
+            android:id="@+id/change_email"
+            android:title="@string/change_email_menu_item"
+            android:icon="@drawable/change_email"/>
+        <item
+            android:id="@+id/change_password"
+            android:title="@string/change_password_menu_item"
+            android:icon="@drawable/change_password"/>
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/delete_account"
+            android:title="@string/delete_account_menu_item"
+            android:icon="@drawable/delete_account">
+        </item>
+
+        <item
+            android:id="@+id/sign_out"
+            android:title="@string/sign_out_menu_item"
+            android:icon="@drawable/sign_out">
+        </item>
+    </group>
+</menu>

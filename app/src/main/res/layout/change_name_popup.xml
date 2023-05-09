@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="30dp"
+    android:paddingEnd="80dp"
+    android:paddingStart="80dp"
+    android:layout_height="190dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_your_new_name"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:inputType="textPersonName"
+        android:autofillHints="name"
+        android:id="@+id/change_name_edit_text"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/change_name_hint"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/azure"
+        android:textColorHint="@color/black"/>
+
+    <Button
+        android:id="@+id/change_name_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/azure"
+        android:text="@string/change_name_button"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

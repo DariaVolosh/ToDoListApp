@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:contentDescription="@string/semicircles"
         android:id="@+id/imageView"
         android:layout_width="@dimen/_170sdp"
         android:layout_height="@dimen/_145sdp"
@@ -30,10 +31,10 @@
             android:orientation="vertical">
 
             <ImageView
+                android:contentDescription="@string/activity_main_image"
                 android:layout_marginTop="30dp"
                 android:layout_width="172dp"
                 android:layout_height="170dp"
-                android:layout_above="@id/header"
                 android:layout_gravity="center"
                 android:layout_marginBottom="45dp"
                 android:src="@drawable/man_with_a_phone" />
@@ -42,14 +43,13 @@
                 android:id="@+id/header"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_above="@id/description"
                 android:layout_marginBottom="20dp"
                 android:alpha="0.75"
                 android:fontFamily="@font/poppins_semibold"
-                android:text="Gets things done with TODO"
+                android:text="@string/activity_main_header"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="18dp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/description"
@@ -60,11 +60,10 @@
                 android:layout_marginBottom="25dp"
                 android:alpha="0.75"
                 android:fontFamily="@font/poppins_regular"
-                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum dictum
-tempus, interdum at dignissim metus. Ultricies sed nunc."
+                android:text="@string/activity_main_description"
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="13dp" />
+                android:textSize="13sp" />
 
             <Button
                 android:id="@+id/button"
@@ -73,10 +72,10 @@ tempus, interdum at dignissim metus. Ultricies sed nunc."
                 android:layout_marginLeft="25dp"
                 android:layout_marginRight="25dp"
                 android:backgroundTint="@color/azure"
-                android:text="Get Started"
+                android:text="@string/get_started_button_text"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
-                android:textSize="13dp"
+                android:textSize="13sp"
                 android:layout_marginBottom="30dp"/>
         </LinearLayout>
     </ScrollView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="30dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_task"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:inputType="text"
+        android:id="@+id/enter_task_edit_text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/task_hint"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/azure"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/add_task_popup_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/azure"
+        android:text="@string/add_task_button"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>
